@@ -1,0 +1,29 @@
+{
+    "$id": "Personal schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Schema for image analysis of sintered tungsten samples",
+    "Mechanical Properties": {
+        "Stress": {
+            "type": "integer",
+            "unit": "MPa",
+            "description": "Stress values calculated from load data, units are MPa"
+        },
+        "Strain": {
+            "type": "integer",
+            "unit": "Unitless",
+            "description": "Strain values obtained from DIC machine, unitless"
+        }
+    },
+    "Image analysis results": {
+        "Particle area": {
+            "type": "integer",
+            "unit": "Micrometer squared",
+            "description": "Particle area obtained from image analysis values in um squared, represented in histogram"
+        },
+        "Intergranular phase area": {
+            "type": "integer",
+            "unit": "Micrometer squared",
+            "description": "Intergranular phase area from image analysis, units in um squared, again represented in a histogram"
+        }
+    }
+}
